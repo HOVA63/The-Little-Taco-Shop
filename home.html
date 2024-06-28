@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Njoagwuani Jehovah-Nissi">
     <meta name="description" content="Contact information for the Little Taco Shop">
-    <title>Contact Us - LTS</title>
+    <title>The Little Taco Shop</title>
     <link rel="stylesheet" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header__h1">Welcome to The Little Taco Shop</h1>
+        <h1 class="header__h1">Little Taco Shop</h1>
         <nav class="header__nav">
         <ul class="header__ul">
             
@@ -42,76 +43,72 @@
         </figure>
     </section>
 
-    <main>
-    <article id="aboutlts">
-    <h2>About LTS</h2>
-    <br>
-    <p>LTS was founded in 2022. Our shop was built from a <b>love of tacos</b>🌮🌮🌮. We hope our shopadds a unique and interesting place to our little town.</p>
+    <main class="main">
+        <article id="ourmenu" class="main__article menu">
+            <h2 class="menu__h2">Our Menu</h2>
+            <table class="menu__container">
+                <caption class="offscreen">Our Tacos</caption>
+                <thead>
+                    <tr>
+                        <th class="menu__header" scope="col">Tacos</th>
+                        <th class="menu__header" scope="col">Quantity</th>
+                        <th class="menu__header" scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="menu__item menu__cr" scope="row" rowspan="3">
+                            Crunchy
+                        </th>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$1.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$2.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$3.25</td>
+                    </tr>
+                    <tr>
+                        <th class="menu__item menu__sf" scope="row" rowspan="3">
+                            Soft
+                        </th>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$2.00</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$3.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$4.50</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="menu__item menu__cs" colspan="3">
+                            Chips &amp; Salsa $2
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
 
-    <h3>Taco Trivia</h3>
-    <br>
-    <aside>
-        <details>
-        <summary>When did tacos first appear in the United States?</summary>
-        <p>
-            Jeffery M. Pilcher, taco historian and professor at the University of Minnesota, says the earliest mention of tacos in the United States are in a newspaper from 1905. (Source: <cite><a
-            href="https://www.smithsonianmag.com/arts-culture/where-did-the-taco-come-from-81228162/"
-            target="_blank">Smithsonian Magazine</a></cite>)
-        </p>
-    </details>
-    </aside>
-    </article>
-    <hr>
-    <article id="ourmenu">
-    <h3>Our Menu</h3>
-    <table>
-        <caption>Our Tacos</caption>
-        <thead>
-          <th scope="col">Tacos</th>
-          <th scope="col">Qty</th>
-          <th scope="col">Price</th>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row" rowspan="3">Crunchy</th>
-                <td>1</td>
-                <td>$1.50</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>$2.50</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>$3.25</td>
-            </tr>
-            <tr>
-                <th scope="row" rowspan="3">Soft</th>
-                <td>1</td>
-                <td>$2.00</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>$3.50</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>$4.50</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3">Chips & Salsa $2</td>
-            </tr>
-        </tfoot>
-    </table>
-    </article>
+            <p class="center">
+                <a href="#">Back to top</a>
+            </p>
+        </article>
     </main>
     
-    <p>
-        <a href="#">Back to top</a>
-    </p>
+    
     <hr>
-    Copyright &copy; The Little Taco Shop
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span> 
+            <span class="nowrap">Little Taco Shop</span>
+        </p>
+    </footer>
 </body>
 </html>
